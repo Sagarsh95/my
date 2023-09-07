@@ -1,0 +1,119 @@
+<html>
+<head>
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+<body>
+<style>
+            body {background-color: aqua;
+                    border-style: solid;}
+        </style>
+   <center>
+   
+    <title>Registration Form</title>
+    </head>
+    <body>
+        <h1 style=text-align:center>REGISTRATION   </h1>
+        <form>
+            <table>
+                <tr>
+    <h3>Please enter your details for registration</h3>
+    <P style="color:red">*Note the fields with * are compulsory</p>
+                    <td>
+                       Name*:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Name" name="">
+                    </td>
+                </tr>
+                     <td>
+         
+                        Father Name *:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Father Name" name="">
+                    </td>
+                </tr>
+                      <td>
+         
+                       Mother Name*:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Mother Name" name="">
+                    </td>
+                </tr> 
+                 <tr>
+                    <td>
+                        Phone Number*:
+                    </td>
+                    <td>
+                        <input type="phone" placeholder="9591****">
+                    </td>
+                </tr>
+               
+                
+            <tr>
+                <td>
+                    Gender*:
+                </td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date of Birth*:
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Branch*:
+                </td>
+                <td>
+                    <select>
+                        <option>Select Option</option>
+                        <option>Computer Science and Engineering</option>
+                        <option>Electronic and communication Engineering</option>
+                        <option>Electronic and Electrical Engineering</option>
+                        <option>Automobile and communication Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>Mechanical Engineering</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address*:
+                </td>
+                <td>
+                    <textarea rows="5" col="17" placeholder="Address"></textarea>
+                </td>
+            </tr>
+                 <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+            </table>
+           
+             <a href="http://127.0.0.1:3000/attendence.html">
+            <button>back</button>
+            </a>
+            
+            
+        </form>
+        </center>
+        </body>
+</html>
